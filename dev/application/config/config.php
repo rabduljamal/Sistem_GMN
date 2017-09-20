@@ -9,7 +9,7 @@ function __autoload($class){
 
 	if(file_exists(APPPATH."models/".strtolower($class).EXT)){
 		include_once(APPPATH."models/".strtolower($class).EXT);
-	}	
+	}
 }
 
 /*
@@ -227,7 +227,7 @@ $config['directory_trigger'] = 'd';
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 1;
 
 /*
 |--------------------------------------------------------------------------

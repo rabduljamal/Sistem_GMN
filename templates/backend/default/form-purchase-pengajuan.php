@@ -17,20 +17,20 @@
           <div class="card-panel">
             <div class="row">
               <div class="input-field col s3">
-                <input id="no_order" type="text" class="validate" readonly>
-                <label for="no_order">No. Order</label>
+                <input id="no_order" type="text" class="validate valid" readonly value="<?=$no_order?>">
+                <label for="no_order" class="active">No. Order</label>
               </div>
               <div class="input-field col s3">
-                <input id="no_faktur" type="text" class="validate">
+                <input id="no_faktur" type="text" class="validate" >
                 <label for="no_faktur">No. faktur</label>
               </div>
               <div class="input-field col s3">
-                <input id="tanggal" type="text" class="validate" readonly>
-                <label for="tanggal">Tanggal</label>
+                <input id="tanggal" type="text" class="validate valid" readonly value="<?=$tanggal?>">
+                <label for="tanggal" class="active">Tanggal</label>
               </div>
               <div class="input-field col s3">
-                <input id="pic" type="text" class="validate" readonly>
-                <label for="pic">Pic</label>
+                <input id="pic" type="text" class="validate valid" readonly value="<?=$user_kode?>">
+                <label for="pic" class="active">Pic</label>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@
                 <label for="last_name">Cari Kode/Nama Barang / Vendor</label>
               </div>
               <div class="input-field col s3">
-                <div id="modal-vendor-add" class="btn-floating btn-small cyan waves-effect waves-light btn modal-trigger">
+                <div id="modal-vendor-add" class="btn-floating btn-small cyan waves-effect waves-light btn modal-trigger" data-toggle="modal" data-target="#modal_pengajuan_purchase">
                 <i class="mdi-content-add"></i>
                 </div>
               </div>
@@ -86,12 +86,7 @@
     </div>
 </div>
 
-<script>
-$(document).on("click", "#modal-vendor-add", function(){
-  $("#modal3").modal("show");
-});
-</script>
-<div id="modal3" class="modal">
+<div id="modal_pengajuan_purchase" class="modal">
   <div class="modal-content teal white-text">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>

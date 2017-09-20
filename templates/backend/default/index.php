@@ -40,6 +40,8 @@
     <link href="<?php echo base_url()?>assets/js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="<?php echo base_url()?>assets/js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 
+    <!-- boostrap CSS-->
+    <link href="<?php echo base_url()?>assets/css/tether.css" type="text/css" rel="stylesheet" media="screen,projection">
 
 </head>
 
@@ -94,6 +96,9 @@
 
     <!-- jQuery Library -->
     <script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/jquery-1.11.2.min.js"></script>
+    <!-- boostrap Library -->
+    <script type="text/javascript" src="<?php echo base_url()?>assets/js/tether.min.js"></script>
+
     <!--materialize js-->
     <script type="text/javascript" src="<?php echo base_url()?>assets/js/materialize.min.js"></script>
     <!--scrollbar-->

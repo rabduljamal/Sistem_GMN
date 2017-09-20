@@ -5,7 +5,7 @@
 		var $_document_root = "D:\Git\Sistem_GMN";
 		var $_host_name = "localhost";
 		var $_site_name = "PT GLobal Media Nusantara";
-		var $_database_name = "sys";
+		var $_database_name = "sistem_gmn";
 		var $_database_user = "root";
 		var $_database_password = "";
 		var $_table_prefix = "tbl_";

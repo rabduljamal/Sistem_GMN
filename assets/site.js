@@ -1,4 +1,4 @@
-var host = window.location.hostname;
+ var host = window.location.hostname;
 $("body").on("click",'a.open',function(){
 	var page=$(this).attr('href');
 	$("body").off( "click", "a");

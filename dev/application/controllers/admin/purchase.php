@@ -8,6 +8,11 @@ class Purchase extends Backend_Controller {
 	}
 
   public function pengajuan(){
-    $this->site->view('form-purchase-pengajuan');
+		$data=array(
+			"no_order"=>$this->create_id(),
+			"tanggal"=>$this->create_date(),
+			"user_kode"=>'USR17080902321'
+		);
+    $this->site->view('form-purchase-pengajuan', $data);
 	}
 }
