@@ -1,7 +1,6 @@
  var host = window.location.hostname;
 $("body").on("click",'a.open',function(){
 	var page=$(this).attr('href');
-	$("body").off( "click", "a");
 	$('#content').html(
 		'<br><br><br><br><br><br><br><br><br>'+
 		'<div class="col s12 m12 center">'+
@@ -25,8 +24,6 @@ $("body").on("click",'a.open',function(){
 		$('#content').html('');
 		$('#content').load(page);
 	}, 1000);
-	$("body").on( "click", "a");;
-	$('body').scrollTop(0);
 	return false;
 });
 

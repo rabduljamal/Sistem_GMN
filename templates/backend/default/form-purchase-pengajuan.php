@@ -44,7 +44,7 @@
                 <label for="last_name">Cari Kode/Nama Barang / Vendor</label>
               </div>
               <div class="input-field col s3">
-                <div id="modal-vendor-add" class="btn-floating btn-small cyan waves-effect waves-light btn modal-trigger" data-toggle="modal" data-target="#modal_pengajuan_purchase">
+                <div id="modal-vendor-add" class="btn-floating btn-small cyan waves-effect waves-light btn modal-trigger" data-toggle="modal" data-target="modal_pengajuan_purchase">
                 <i class="mdi-content-add"></i>
                 </div>
               </div>
@@ -85,14 +85,32 @@
       </div>
     </div>
 </div>
-
+<script>
+  $(document).ready(function() {
+  $('.modal-trigger').leanModal();
+});
+</script>
 <div id="modal_pengajuan_purchase" class="modal">
-  <div class="modal-content teal white-text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+  <div class="modal-content">
+      <div class="input-field col s3">
+        <input id="vendor_barang_kode" type="text" class="validate valid" readonly value="<?=$user_kode?>">
+        <label for="vendor_barang_kode" class="active">Kode barang</label>
+      </div>
+      <div class="input-field col s3">
+        <input id="vendor_barang_tanggal" type="text" class="validate valid" value="<?=$tanggal?>">
+        <label for="vendor_barang_tanggal" class="active">Tanggal</label>
+      </div>
+      <div class="input-field col s3">
+        <input id="vendor_barang_nama" type="text" class="validate">
+        <label for="vendor_barang_nama">Nama Barang</label>
+      </div>
+      <div class="input-field col s3">
+        <input id="vendor_barang_vendor" type="text" class="validate">
+        <label for="vendor_barang_vendor">Vendor</label>
+      </div>
   </div>
-  <div class="modal-footer  teal lighten-4">
-    <a href="#" class="waves-effect waves-red btn-flat modal-action modal-close">Disagree</a>
-    <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
+  <div class="modal-footer cyan">
+    <a href="#" class="waves-effect waves-red btn-flat modal-action modal-close">Tutup</a>
+    <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Simpan</a>
   </div>
 </div>
