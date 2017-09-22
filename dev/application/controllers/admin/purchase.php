@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Purchase extends Backend_Controller {
 
 	public function index(){
-
+		echo "aaaa";
 	}
 
   public function pengajuan(){

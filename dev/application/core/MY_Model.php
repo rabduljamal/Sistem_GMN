@@ -4,10 +4,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class MY_Model extends CI_Model{
 	protected $_table_name;
 	protected $_order_by;
-	protected $_order_by_type;
+	protected $_order_by_type = 'ASC';
 	protected $_primary_filter = 'intval';
 	protected $_primary_key;
-	protected $_type ; 
+	protected $_type ;
 	public $rules;
 
 
@@ -32,7 +32,7 @@ class MY_Model extends CI_Model{
 		$this->db->set($data);
 		$this->db->where($where);
 		$this->db->update('{PRE}'.$this->_table_name);
-	}	
+	}
 
 	public function get($id=NULL,$single=FALSE){
 		if($id != NULL){
@@ -77,7 +77,7 @@ class MY_Model extends CI_Model{
 			$this->db->limit($limit);
 		}
 
-		return $this->db->get(NULL,$single);
+		return $this->get(NULL,$single);
 	}
 
 	public function delete($id){
