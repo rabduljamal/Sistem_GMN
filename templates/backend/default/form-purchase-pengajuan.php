@@ -108,6 +108,10 @@
         <input id="vendor_barang_vendor" type="text" class="validate">
         <label for="vendor_barang_vendor">Vendor</label>
       </div>
+      <div class="input-field col s3">
+        <input id="vendor_barang_harga" type="text" class="validate">
+        <label for="vendor_barang_harga">Harga</label>
+      </div>
   </div>
   <div class="modal-footer cyan">
     <a href="#" class="waves-effect waves-red btn-flat modal-action modal-close">Tutup</a>
