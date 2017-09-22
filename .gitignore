@@ -26,3 +26,4 @@ configuration.php
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
+configuration.php
