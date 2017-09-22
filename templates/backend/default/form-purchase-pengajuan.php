@@ -115,6 +115,6 @@
   </div>
   <div class="modal-footer cyan">
     <a href="#" class="waves-effect waves-red btn-flat modal-action modal-close">Tutup</a>
-    <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Simpan</a>
+    <a id="simpan_modal_purchase" class="waves-effect waves-green btn-flat modal-action modal-close">Simpan</a>
   </div>
 </div>

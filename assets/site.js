@@ -1,4 +1,4 @@
- var host = window.location.hostname;
+ var host = window.location.hostname+'/Sistem_GMN';
 $("body").on("click",'a.open',function(){
 	var page=$(this).attr('href');
 	$('#content').html(
@@ -115,14 +115,17 @@ function realtime_g(){
 }
 
 /* ------JS Modul Peurchase------- */
-function simpan_modal(){
+$(document).on("click", "#simpan_modal_purchase", function(){
   $.ajax({
    dataType:'json',
    type: 'POST',
-   url: 'http://'+host+'/penjualan/tmp/json',
-   data:{faktur:faktur},
+   url: 'http://'+host+'/admin/purchase/insert_tmp',
+   data:{id:"aaaaaa"},
    success: function(data){
        if(data.status=='success'){
+         alert();
        }
-       
-}
+  }
+  })
+
+});
