@@ -15,4 +15,13 @@ class Purchase extends Backend_Controller {
 		);
     $this->site->view('form-purchase-pengajuan', $data);
 	}
+
+	public function insert(){
+
+	}
+
+	public function insert_tmp(){
+
+	}
+
 }
