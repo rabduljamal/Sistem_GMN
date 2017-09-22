@@ -113,3 +113,16 @@ function realtime_g(){
         }
     });
 }
+
+/* ------JS Modul Peurchase------- */
+function simpan_modal(){
+  $.ajax({
+   dataType:'json',
+   type: 'POST',
+   url: 'http://'+host+'/penjualan/tmp/json',
+   data:{faktur:faktur},
+   success: function(data){
+       if(data.status=='success'){
+       }
+       
+}
