@@ -11,7 +11,9 @@ class Dashboard extends Backend_Controller {
 
 	public function Dsh(){
 		$data = array(
-			'level' => 'purchase'
+			'level' => 'purchase',
+			'test' => 'purchase',
+
 		);
 		$this->site->view('index', $data);
 	}
