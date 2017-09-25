@@ -92,27 +92,34 @@
 </script>
 <div id="modal_pengajuan_purchase" class="modal">
   <div class="modal-content">
-      <div class="input-field col s3">
+    <div class="row">
+      <div class="input-field col s4">
         <input id="vendor_barang_kode" type="text" class="validate valid" readonly value="<?=$user_kode?>">
         <label for="vendor_barang_kode" class="active">Kode barang</label>
       </div>
-      <div class="input-field col s3">
+      <div class="input-field col s4">
         <input id="vendor_barang_tanggal" type="text" class="validate valid" value="<?=$tanggal?>">
         <label for="vendor_barang_tanggal" class="active">Tanggal</label>
       </div>
-      <div class="input-field col s3">
-        <input id="vendor_barang_nama" type="text" class="validate">
-        <label for="vendor_barang_nama">Nama Barang</label>
-      </div>
-      <div class="input-field col s3">
+      <div class="input-field col s4">
         <input id="vendor_barang_vendor" type="text" class="validate">
         <label for="vendor_barang_vendor">Vendor</label>
       </div>
-      <div class="input-field col s3">
-        <input id="vendor_barang_harga" type="text" class="validate">
-        <label for="vendor_barang_harga">Harga</label>
+      <div class="input-field col s4">
+        <input id="vendor_barang_nama" type="text" class="validate">
+        <label for="vendor_barang_nama">Nama Barang</label>
       </div>
+      <div class="input-field col s4">
+        <input id="vendor_barang_harga" type="text" class="validate">
+        <label for="vendor_barang_harga">Total Harga</label>
+      </div>
+      <div class="input-field col s4">
+        <input id="vendor_barang_harga" type="text" class="validate">
+        <label for="vendor_barang_harga">Total Biaya</label>
+      </div>
+    </div>
 
+    <div class="row">
       <table class="responsive-table display dataTable">
         <thead>
           <tr>
@@ -123,9 +130,15 @@
           </tr>
         </thead>
         <tbody>
-
+          <tr>
+            <td>1</td>
+            <td>plastik</td>
+            <td>1000</td>
+            <td>plastik untuk pembungkus</td>
+          </tr>
         </tbody>
       </table>
+    </div>
   </div>
   <div class="modal-footer cyan">
     <a href="#" class="waves-effect waves-red btn-flat modal-action modal-close">Tutup</a>
