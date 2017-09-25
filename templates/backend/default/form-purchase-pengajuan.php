@@ -113,7 +113,7 @@
         <label for="vendor_barang_harga">Harga</label>
       </div>
 
-      <table>
+      <table class="responsive-table display dataTable">
         <thead>
           <tr>
             <th>No</th>
@@ -123,7 +123,7 @@
           </tr>
         </thead>
         <tbody>
-          
+
         </tbody>
       </table>
   </div>

@@ -27,7 +27,7 @@
     <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
     <!-- For Windows Phone -->
 
-    
+
     <link href="<?php echo base_url()?>assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="<?php echo base_url()?>assets/css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
     <!-- Custome CSS-->
@@ -39,6 +39,8 @@
     <link href="<?php echo base_url()?>assets/js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="<?php echo base_url()?>assets/js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 
+    <link href="<?php echo base_url()?>assets/js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="<?php echo base_url()?>assets/js/plugins/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 
 
 </head>
@@ -123,6 +125,10 @@
     <!--google map
     <script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/google-map/google-map-script.js"></script>
     -->
+
+    <!-- data-tables -->
+    <script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/data-tables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins/data-tables/data-tables-script.js"></script>
 
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="<?php echo base_url()?>assets/js/plugins.min.js"></script>
