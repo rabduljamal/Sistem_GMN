@@ -112,6 +112,20 @@
         <input id="vendor_barang_harga" type="text" class="validate">
         <label for="vendor_barang_harga">Harga</label>
       </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama Material</th>
+            <th>Harga</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
   </div>
   <div class="modal-footer cyan">
     <a href="#" class="waves-effect waves-red btn-flat modal-action modal-close">Tutup</a>
